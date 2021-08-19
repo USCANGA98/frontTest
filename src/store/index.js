@@ -5,8 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    orderSelected: ""
   },
   mutations: {
+    setOrderSelected(state, payload) {
+      state.orderSelected = payload;
+    },
+    
   },
   actions: {
   },
